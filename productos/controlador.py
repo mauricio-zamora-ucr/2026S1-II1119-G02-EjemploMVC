@@ -7,6 +7,7 @@ def agregar_producto() -> None:
     codigo, nombre, precio, cantidad, activo = vista.agregar_info_producto()
     #limpio el codigo, lo convierto en mayusculas y ademas le quito los espacio
     codigo = codigo.strip().upper()
+    nombre = nombre.strip()
     estado, mensaje = modelo.agregar_producto(codigo, nombre, precio, cantidad, activo)
     if estado:
         imprimir_mensaje('Producto registrado')
