@@ -1,4 +1,16 @@
 from eii_utils import mostrar_menu
+from typing import TypedDict
+
+class Estudiante(TypedDict):
+    carne:str
+    nombre:str
+    edad:int
+    lugar:str
+
+lista_nueva:list[Estudiante] = []
+s1:Estudiante = {}
+s1['nombre'] = 'Ligia'
+
 
 lista_nombres:list[str] = ['Diego ',' Jimena','santiago','Giuliana','ALISSA','Arath','Abigail', 'Lizeth', 'Isabella', 'Paula']
 
