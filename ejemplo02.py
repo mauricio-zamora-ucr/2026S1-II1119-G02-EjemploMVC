@@ -5,7 +5,7 @@ lista_nombres:list[str] = ['Diego ',' Jimena','santiago','Giuliana','ALISSA','Ar
 lista_estudiante:list[dict[str, str]] = []
 e1 = {'nombre':'Jimena', 'carne':'a', 'lugar':'Cartago'}
 lista_estudiante.append(e1)
-e2 = {'nomdre':'Ariadna', 'carne':'b', 'lugar':'Heredia'}
+e2 = {'nombre':'Ariadna', 'carne':'b', 'lugar':'Heredia'}
 lista_estudiante.append(e2)
 e3 = {'nombre':'Arath', 'carne':'c', 'lugar':'San Jose'}
 lista_estudiante.append(e3)
@@ -21,3 +21,5 @@ def selecionar_estudiante(lista:list[str]) -> str:
 if __name__ == '__main__':
     #print(selecionar_estudiante(lista_nombres))
     print(lista_estudiante)
+    for i in lista_estudiante:
+        print(i['lugar'], i['nombre'])
