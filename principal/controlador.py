@@ -11,6 +11,7 @@ def iniciar_aplicacion() -> None:
             case 1:
                 print('Ver producto')
                 pausar()
+                
             case 2:
                 print('ver clientes')
                 pausar()
