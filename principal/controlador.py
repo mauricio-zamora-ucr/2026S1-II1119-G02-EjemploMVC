@@ -1,5 +1,6 @@
 from principal.vista import mostrar_menu_principal
 from eii_utils import limpiar_consola, pausar
+import productos.controlador as producto_controlador
 
 def iniciar_aplicacion() -> None:
     opcion:int = -1
@@ -9,9 +10,9 @@ def iniciar_aplicacion() -> None:
         opcion = mostrar_menu_principal()
         match opcion:
             case 1:
-                print('Ver producto')
+                producto_controlador.iniciar_procesamiento_producto()
                 pausar()
-                
+
             case 2:
                 print('ver clientes')
                 pausar()
