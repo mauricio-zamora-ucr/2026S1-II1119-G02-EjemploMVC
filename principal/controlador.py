@@ -13,7 +13,7 @@ def iniciar_aplicacion() -> None:
                 pausar()
             case 2:
                 print('ver clientes')
-                pausar
+                pausar()
             case 0:
                 print('Hasta la vista, Baby!')
                 pausar()
