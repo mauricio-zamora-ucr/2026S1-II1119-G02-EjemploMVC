@@ -4,7 +4,7 @@ def mostrar_menu_principal() -> int:
     return mostrar_menu('Administración de productos',
     ['Agregar','Modificar','Eliminar','Ver','Listar','Reporte'])
 
-def agregar_producto() -> tuple(str, str, float, int, bool):
+def agregar_producto() -> tuple[str, str, float, int, bool]:
     codigo:str = leer_texto('Código')
     nombre:str = leer_texto('Nombre')
     precio:float = leer_flotante('Precio')
